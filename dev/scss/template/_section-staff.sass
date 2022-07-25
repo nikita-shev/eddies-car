@@ -1,0 +1,100 @@
+.staff
+  padding:  95px 0 102px
+  &__title
+    max-width: 825px
+    margin: 0 auto 100px
+    font-family: 'Proxima Nova Bl', sans-serif
+    font-size: 36px
+    font-weight: 400
+    text-align: center
+    color: #000000
+
+  &-wrap
+    justify-content: space-around
+
+.staff__cards
+  & img
+    margin-bottom: 35px
+  & p
+    max-width: 280px
+    color: #000000
+  &:nth-child(2) p
+    max-width: 260px
+  &:nth-child(3) p
+    max-width: 310px
+
+
+
+@media (max-width: 1200px)
+  .staff__cards
+    & p
+      max-width: 259px
+    &:nth-child(2) p
+      max-width: 250px
+    &:nth-child(3) p
+      max-width: 260px
+
+@media (max-width: 992px)
+  .staff
+    padding: 80px 0 90px
+    &__title
+      font-size: 30px
+      margin-bottom: 80px
+
+    &__cards
+      max-width: 225px
+      & p
+        max-width: 215px
+      &:nth-child(2) p
+        max-width: 225px
+      &:nth-child(3) p
+        max-width: 215px
+
+@media (max-width: 768px)
+  .staff
+    padding: 70px 0 80px
+    &__title
+      max-width: none
+      font-size: 23px
+      margin-bottom: 50px
+
+    &-wrap
+      flex-wrap: wrap
+
+    &__cards
+      max-width: none
+      width: 100%
+      margin-bottom: 50px
+      &:last-child
+        margin-bottom: 0
+      & img
+        max-width: 150px
+        margin-bottom: 20px
+      &:nth-child(1) p
+        max-width: 255px
+      &:nth-child(n+2) p
+        max-width: 285px
+
+@media (max-width: 576px)
+  .staff
+    padding: 50px 0 70px
+    &__title
+      font-size: 22px
+
+    &__cards
+      & img
+        max-width: 130px
+
+@media (max-width: 450px)
+  .staff
+    padding: 50px 0 60px
+    &__title
+      font-size: 19px
+
+@media (max-width: 320px)
+  .staff
+    &__title
+      font-size: 14px
+
+    & .cards__subtitle
+      font-size: 13px

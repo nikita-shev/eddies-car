@@ -1,0 +1,96 @@
+@import "normalize"
+@import "stylesheet"
+
+*
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+
+h1, h2, h3, p
+  margin: 0
+
+.d-flex
+  display: flex
+
+.container
+  width: 1170px
+  margin: 0 auto
+
+.btn-up
+  position: fixed
+  right: 15px
+  bottom: 15px
+  z-index: 2501
+  display: none
+  width: 50px
+  height: 50px
+  border: none
+  background: transparent
+  & img
+    width: 50px
+    height: 50px
+  &:focus
+    outline: none
+  &:hover
+    cursor: pointer
+
+.btn-fix
+  display: inline-block
+
+@import "template/header"
+@import "template/header-description"
+@import "template/section-price"
+@import "template/section-advantages"
+@import "template/section-search"
+@import "template/section-guarantee"
+@import "template/section-bonus"
+@import "template/section-questions"
+@import "template/section-property"
+@import "template/section-warehouse"
+@import "template/section-staff"
+@import "template/section-advice"
+@import "template/section-welcome"
+@import "map"
+@import "template/footer"
+@import "template/modal"
+
+@media (max-width: 1200px)
+  .container
+    width: 960px
+
+@media (max-width: 992px)
+  .container
+    width: 720px
+  .btn-up
+    width: 40px
+    height: 40px
+    & img
+      width: 40px
+      height: 40px
+    &:hover
+      cursor: default
+
+@media (max-width: 768px)
+  .container
+    width: 540px
+
+@media (max-width: 576px)
+  .container
+    width: 450px
+
+  .btn-up
+    right: 10px
+    bottom: 10px
+    width: 30px
+    height: 30px
+    & img
+      width: 30px
+      height: 30px
+
+@media (max-width: 450px)
+  .container
+    width: 320px
+
+  .btn-up
+    right: 5px
+    bottom: 5px

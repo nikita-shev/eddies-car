@@ -1,0 +1,157 @@
+.section-advice
+  background: url("../img/advice-bg.jpg")
+
+.advice
+  padding:  95px 0 1px
+  &__title
+    margin-bottom: 55px
+    font-family: 'Proxima Nova Bl', sans-serif
+    font-size: 30px
+    font-weight: 400
+    text-align: center
+    color: #ffffff
+  &__call
+    margin-bottom: 12px
+    font-family: 'Proxima Nova Rg', sans-serif
+    font-size: 14px
+    font-weight: 400
+    text-align: center
+    color: #ffffff
+  &__phone
+    display: block
+    margin-bottom: 57px
+    font-family: 'Proxima Nova Th', sans-serif
+    font-size: 30px
+    font-weight: 400
+    text-align: center
+    text-decoration: none
+    color: #ffffff
+
+  &__form
+    justify-content: center
+  &__input
+    width: 370px
+    padding: 25px 0 25px 30px
+    margin-right: 30px
+    font-family: 'Proxima Nova Rg', sans-serif
+    font-size: 14px
+    font-weight: 400
+    text-transform: uppercase
+    color: #818181
+    border: 1px solid #ffffff
+    &_img
+      position: absolute
+      top: 25px
+      right: 58px
+      z-index: 2
+  &__btn
+    padding: 20px 90px
+    font-size: 17px
+    background-color: #f7b516
+    &:hover
+      background-color: #ca8f07
+
+
+@media (max-width: 1200px)
+  .advice
+    &__title
+      max-width: 710px
+      margin: 0 auto 55px
+
+    &__input_img
+      right: 50px
+
+@media (max-width: 992px)
+  .section-advice .input-wrap
+    margin-bottom: 0
+
+  .advice
+    padding: 80px 0 0
+    &__phone
+      font-size: 26px
+    &__btn
+      padding: 20px 60px
+      &:hover
+        background-color: #f7b516
+
+@media (max-width: 768px)
+  .advice
+    padding: 70px 0
+    &__title
+      max-width: none
+      font-size: 26px
+    &__phone
+      font-size: 24px
+
+    &__form
+      flex-wrap: wrap
+    &__input
+      width: 100%
+      margin-right: 0
+      font-size: 13px
+      &_img
+        top: 24px
+        right: 25px
+    &__btn
+      padding: 20px 92px
+
+
+  .section-advice
+    & .form
+      padding-bottom: 0
+    & .input-wrap
+      margin-bottom: 15px
+
+@media (max-width: 576px)
+  .advice
+    padding: 50px 0
+    &__title
+      margin-bottom: 40px
+      font-size: 22px
+    &__phone
+      margin-bottom: 40px
+      font-size: 18px
+
+    &__form
+      & .input-wrap
+        width: 80%
+    &__input
+      padding: 20px 0 20px 30px
+      &_img
+        top: 19px
+    &__btn
+      padding: 20px 83px
+
+@media (max-width: 450px)
+  .advice
+    &__title
+      margin-bottom: 30px
+      font-size: 19px
+    &__phone
+      font-size: 16px
+
+    &__form
+      & .input-wrap
+        width: 100%
+    &__input
+      padding: 15px 0 15px 20px
+      font-size: 12px
+      &_img
+        top: 16px
+        width: 15px
+    &__btn
+      width: 100%
+      padding: 15px 62px
+      font-size: 14px
+
+@media (max-width: 320px)
+  .advice
+    &__title
+      font-size: 17px
+    &__phone
+      font-size: 15px
+    &__form
+      & .input-wrap
+        width: 90%
+    &__btn
+      width: 90%

@@ -1,0 +1,73 @@
+.property
+  padding:  90px 0 100px
+  &__title
+    margin-bottom: 25px
+    font-family: 'Proxima Nova Bl', sans-serif
+    font-size: 36px
+    font-weight: 400
+    text-align: center
+    color: #000000
+  &__subtitle
+    margin-bottom: 100px
+    font-family: 'Proxima Nova Rg', sans-serif
+    font-size: 20px
+    font-weight: 400
+    text-align: center
+    color: #000000
+
+  &-wrap
+    justify-content: space-around
+
+
+.property__cards
+  & img
+    margin-bottom: 42px
+  & p
+    max-width: 210px
+    color: #000000
+  &:nth-child(2) p
+    max-width: 195px
+  &:nth-child(3) p
+    max-width: 215px
+
+
+@media (max-width: 992px)
+  .property
+    padding: 80px 0
+    &__subtitle
+      margin-bottom: 70px
+
+@media (max-width: 768px)
+  .property
+    padding: 70px 0 80px
+    &__subtitle
+      margin-bottom: 50px
+
+    &-wrap
+      flex-wrap: wrap
+
+    &__cards
+      width: 100%
+      margin-bottom: 50px
+      &:last-child
+        margin-bottom: 0
+      & img
+        margin-bottom: 20px
+      &:nth-child(-n+3) p
+        max-width: 280px
+
+@media (max-width: 576px)
+  .property
+    padding: 50px 0 60px
+    &__title
+      margin-bottom: 15px
+      font-size: 26px
+    &__subtitle
+      font-size: 16px
+
+@media (max-width: 450px)
+  .property
+    &__title
+      font-size: 23px
+    &__subtitle
+      font-size: 14px

@@ -1,0 +1,82 @@
+.section-warehouse
+  background-color: #0b3554
+
+.warehouse
+  padding:  92px 0 97px
+  &__title
+    margin-bottom: 25px
+    font-family: 'Proxima Nova Bl', sans-serif
+    font-size: 36px
+    font-weight: 400
+    text-align: center
+    color: #ffffff
+  &__subtitle
+    max-width: 650px
+    margin: 0 auto 98px
+    font-family: 'Proxima Nova Rg', sans-serif
+    font-size: 20px
+    font-weight: 400
+    text-align: center
+    color: #ffffff
+
+  &-wrap
+    & img
+      margin-right: 30px
+      &:last-child
+        margin-right: 0
+
+
+@media (max-width: 1200px)
+  .warehouse-wrap img
+    max-width: 300px
+
+@media (max-width: 992px)
+  .warehouse
+    padding: 80px 0
+    &__subtitle
+      margin-bottom: 50px
+    &-wrap img
+      max-width: 233px
+      margin-right: 10px
+
+@media (max-width: 768px)
+  .warehouse
+    padding: 70px 0 80px
+    &-wrap
+      flex-wrap: wrap
+      justify-content: center
+      & img
+        max-width: none
+        width: 70%
+        margin-right: 0
+        margin-bottom: 15px
+        &:last-child
+          margin-bottom: 0
+
+@media (max-width: 576px)
+  .warehouse
+    padding: 50px 0 70px
+    &__title
+      font-size: 26px
+    &__subtitle
+      font-size: 16px
+
+@media (max-width: 450px)
+  .warehouse
+    padding: 50px 0
+    &__title
+      margin-bottom: 15px
+      font-size: 23px
+    &__subtitle
+      margin-bottom: 30px
+      font-size: 14px
+    &-wrap
+      & img
+        width: 80%
+
+@media (max-width: 320px)
+  .warehouse
+    &__title
+      font-size: 22px
+    &__subtitle
+      font-size: 14px

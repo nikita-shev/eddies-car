@@ -1,0 +1,400 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Продажа белазов</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="nav-bar header__nav-bar d-flex">
+                <a class="logo nav-bar__logo"><img src="img/logo.png" alt="Logo"></a>
+
+                <div class="time nav-bar__time d-flex">
+                    <span>c 9:00 до 21:00</span>
+                    <span>без выходных</span>
+                </div>
+
+                <div class="phone nav-bar__phone d-flex">
+                    <a class="phone__number" href="tel:+7(818)247-47-25">+7(818) 247-47-25</a>
+                    <a class="phone__number" href="tel:+7(818)247-47-25">+7(818) 247-47-25</a>
+                </div>
+
+                <button class="btn nav-bar__btn">Заказать звонок</button>
+            </div>
+        </div>
+    </header>
+
+    <section class="header-description">
+        <div class="container">
+            <div class="advantage header-description__advantage">
+
+                <h1 class="advantage__title">Оригинальные запчасти для&nbsp;Белаз</h1>
+
+                <p class="advantage__subtitle">с бесплатной доставкой в Ваш город!</p>
+
+                <ul class="advantage-list">
+                    <li class="advantage-list__item d-flex">
+                        <img class="advantage-list__icon" src="img/icon/discount.svg" alt="Icon">
+                        <span>Дилерские цены - ниже на 20%, работаем без посредников!</span>
+                    </li>
+                    <li class="advantage-list__item d-flex">
+                        <img class="advantage-list__icon" src="img/icon/delivery.svg" alt="Icon">
+                        <span>Срочная бесплатная доставка за 7 дней</span>
+                    </li>
+                    <li class="advantage-list__item d-flex">
+                        <img class="advantage-list__icon" src="img/icon/calendar.svg" alt="Icon">
+                        <span>Даем рассрочку 6 месяцев</span>
+                    </li>
+                    <li class="advantage-list__item d-flex">
+                        <img class="advantage-list__icon" src="img/icon/guarantee.svg" alt="Icon">
+                        <span>Даем гарантию от 12 месяцев</span>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="section-price">
+        <div class="container">
+            <div class="wrap d-flex">
+                <div class="send-price section-price__send-price d-flex">
+                    <h2 class="send-price__title">Получите прайс прямо сейчас на электронную почту!</h2>
+
+                    <form action="template/mail.php" method="post" class="form send-price__form">
+                        <div class="input-wrap">
+                            <input type="text" name="email" class="input input__email" placeholder="Введите ваш e-mail">
+                            <img class="input__email_img" src="img/icon/msg.png" alt="msg">
+                            <div id="email-error" class="invalid" style="display: none"></div>
+                        </div>
+
+                        <div class="input-wrap">
+                            <input type="tel" name="phone" class="input input__phone phone" placeholder="Введите ваш телефон">
+                            <img class="input__phone_img" src="img/icon/call-answer.png" alt="call">
+                        </div>
+
+                        <div class="send-text form__send-text">
+                            <p class="send-text__time">Прайс придет к Вам на почту в течение 5 минут!</p>
+                            <img class="send-text__img" src="img/icon/clock.svg" alt="Clock">
+                        </div>
+
+                        <button class="btn btn__price">Получить прайс</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-advantages">
+        <div class="container">
+            <div class="advantages">
+                <h2 class="advantages__title">Вам не придется ждать!</h2>
+                <p class="advantages__subtitle">Любые запчасти для всех моделей Белаз всегда&nbsp;в наличии!</p>
+
+                <div class="advantages-wrapper d-flex">
+                    <div class="advantages-wrapper__item d-flex">
+                        <img class="advantages-wrapper__img" src="img/icon/engine.png" alt="Detail">
+                        <p class="advantages-wrapper__text">Любые типы деталей от&nbsp;шайбы до двигателя!</p>
+                    </div>
+
+                    <div class="advantages-wrapper__item d-flex">
+                        <img class="advantages-wrapper__img" src="img/icon/dump-truck.png" alt="Detail">
+                        <p class="advantages-wrapper__text">Все модификации Белаз от&nbsp;45т до 450 т</p>
+                    </div>
+
+                    <div class="advantages-wrapper__item d-flex">
+                        <img class="advantages-wrapper__img" src="img/icon/calendar-advantages.png" alt="Detail">
+                        <p class="advantages-wrapper__text">Отгружаем в день заказа!</p>
+                    </div>
+
+                    <div class="advantages-wrapper__item d-flex">
+                        <img class="advantages-wrapper__img" src="img/icon/map.png" alt="Detail">
+                        <p class="advantages-wrapper__text">Доставим в любое место!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-search">
+        <div class="container">
+            <div class="follow-price section-search__find-price">
+                <h2 class="follow-price__title">Ищете конкретную деталь?</h2>
+                <p class="follow-price__subtitle">Если у Вас есть артикул - введите его в поле ниже и&nbsp;получите цену ПРЯМО СЕЙЧАС!</p>
+
+                <form action="template/mail.php" method="post" class="form follow-price__form d-flex">
+                    <div class="input-wrap">
+                        <input type="text" name="article" class="input follow-price__input" placeholder="Введите артикул детали">
+                        <div id="article-error" class="invalid invalid-modal" style="display: none">Заполните поле</div>
+                    </div>
+
+                    <div class="input-wrap">
+                        <input type="text" name="phone" class="input follow-price__input phone" placeholder="Введите ваш телефон">
+                        <img class="follow-price__input_img" src="img/icon/call-answer.png" alt="call">
+                    </div>
+
+                    <button class="btn follow-price__btn">Узнать цену</button>
+                </form>
+
+                <p class="follow-price__call">Мы перезвоним вам в течение 3 минут и&nbsp;назовем цену детали!</p>
+                <p class="follow-price__call follow-price__call_you">Или Вы можете перезвонить нам сами:</p>
+
+                <a class="follow-price__phone" href="tel:+7(818)247-47-25">+7 (818) 247-47-25</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-guarantee">
+        <div class="container">
+            <div class="guarantee section-guarantee__guarantee">
+                <h2 class="guarantee__title">Мы гарантируем сохранность деталей во время перевозки!</h2>
+
+                <div class="guarantee-wrap d-flex">
+                    <div class="guarantee-delivery d-flex">
+                        <img class="guarantee-delivery__img" src="img/guarantee/guarantee-delivery.jpg" alt="Guarantee">
+                        <p class="guarantee-delivery__title">Гарантия на целостность поставки прописана в&nbsp;договоре</p>
+                        <a class="guarantee-delivery__details" href="#">ПОДРОБНЕЕ</a>
+                    </div>
+
+                    <div class="guarantee-parts d-flex">
+                        <img class="guarantee-parts__img" src="img/guarantee/parts.jpg" alt="Guarantee">
+                        <p class="guarantee-parts__title">Каждая запчасть доставляется с&nbsp;завода в&nbsp;жесткой упаковке</p>
+                        <a class="guarantee-parts__details" href="#">ПОДРОБНЕЕ</a>
+                    </div>
+
+                    <div class="guarantee-quality d-flex">
+                        <img class="guarantee-quality__img" src="img/guarantee/quality.jpg" alt="Guarantee">
+                        <p class="guarantee-quality__title">Дополнительный контроль качества нашими специалистами</p>
+                        <a class="guarantee-quality__details" href="#">ПОДРОБНЕЕ</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-bonus">
+        <div class="container">
+            <div class="bonus section-bonus__bonus">
+                <h2 class="bonus__title">У нас разработаны бонусные системы и скидки для наших клиентов</h2>
+
+                <div class="discounts bonus__discounts d-flex">
+                    <div class="cards discounts__cards d-flex">
+                        <img class="cards__img" src="img/bonus/percentage-10.png" alt="10%">
+                        <p class="cards__subtitle">Дополнительная скидка 10% на вторую запчасть и&nbsp;любые последующие</p>
+                    </div>
+
+                    <div class="cards discounts__cards d-flex">
+                        <img class="cards__img" src="img/bonus/percentage-20.png" alt="10%">
+                        <p class="cards__subtitle">Скидка 20% при заключении договора на годовое сервисное обслуживание</p>
+                    </div>
+
+                    <div class="cards discounts__cards d-flex">
+                        <img class="cards__img" src="img/bonus/delivery.png" alt="10%">
+                        <p class="cards__subtitle">Бесплатная доставка по&nbsp;всей России для&nbsp;всех клиентов</p>
+                    </div>
+
+                    <div class="cards discounts__cards d-flex">
+                        <img class="cards__img" src="img/bonus/support.png" alt="10%">
+                        <p class="cards__subtitle">Бесплатная круглосуточная техническая поддержка</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-questions">
+        <div class="container">
+            <div class="questions section-questions__questions">
+                <h2 class="questions__title">У Вас остались вопросы?</h2>
+                <p class="questions__subtitle">На Ваши вопросы отвечает Эдуард</p>
+
+                <div class="questions-wrap d-flex">
+                    <ol class="questions-list questions-list__elements">
+                        <li class="questions-list__item" data-questions="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam autem ducimus eum explicabo fugiat ipsa ipsum natus quidem unde? Culpa dignissimos eligendi explicabo id molestias, ratione recusandae sunt. Aspernatur consequuntur debitis distinctio dolores et eum fuga hic minus nesciunt, numquam sed sequi sunt tempore veritatis voluptates. Dolore dolorem minima quidem."><a href="#">Как заказать деталь правильно?</a></li>
+                        <li class="questions-list__item" data-questions="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, voluptatibus!"><a href="#">Что делать, если запчасть не&nbsp;понадобилась?</a></li>
+                        <li class="questions-list__item" data-questions="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, voluptatibus!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, voluptatibus!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, voluptatibus!"><a href="#">Время доставки деталей?</a></li>
+                        <li class="questions-list__item" data-questions="Lorem ipsum dolor sit amet!"><a href="#">В какие регионы осуществляется доставка?</a></li>
+                        <li class="questions-list__item" data-questions="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, voluptatibus!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, voluptatibus!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, voluptatibus!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, voluptatibus!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, voluptatibus!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, voluptatibus!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, voluptatibus!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, voluptatibus!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, voluptatibus!"><a href="#">В чем преимущества оригинальных деталей?</a></li>
+                        <li class="questions-list__item other" data-questions="#Ваш ответ"><a href="#">#Ваш вопрос</a></li>
+                        <li class="questions-list__item other" data-questions="#Ваш ответ"><a href="#">#Ваш вопрос</a></li>
+                        <li class="questions-list__item others"><a href="#">Еще вопросы</a></li>
+                    </ol>
+
+                    <div class="questions-wrapper">
+                        <img src="img/president.jpg" alt="President">
+                        <p class="questions-wrapper__text">Эдуард Викторович, Директор ООО "Eddie`s-Car"</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-property">
+        <div class="container">
+            <div class="property section-property__property">
+                <h2 class="property__title">С нами удобно работать!</h2>
+                <p class="property__subtitle">Более 70% клиентов приходят к нам по рекомендации!</p>
+
+                <div class="property-wrap d-flex">
+                    <div class="cards property__cards d-flex">
+                        <img class="cards__img" src="img/property/pay.png" alt="Pay">
+                        <p class="cards__subtitle cards__subtitle_property">Вы вносите предоплату в размере 50% от&nbsp;стоимости запчасти</p>
+                    </div>
+
+                    <div class="cards property__cards d-flex">
+                        <img class="cards__img" src="img/property/_delivery.png" alt="Delivery">
+                        <p class="cards__subtitle cards__subtitle_property">Отправляем запчасти в день заказа</p>
+                    </div>
+
+                    <div class="cards property__cards d-flex">
+                        <img class="cards__img" src="img/property/pay-two.png" alt="Pay">
+                        <p class="cards__subtitle">Получаете деталь, проверяете, оплачиваете оставшиеся 50%</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-warehouse">
+        <div class="container">
+            <div class="warehouse section-warehouse__warehouse">
+                <h2 class="warehouse__title">У нас собственный склад!</h2>
+                <p class="warehouse__subtitle">Это позволяет нам быстро обрабатывать запросы и&nbsp;отгружать детали в день заказа!</p>
+
+                <div class="warehouse-wrap d-flex">
+                    <img src="img/warehouse/Warehouse-one.png" alt="Warehouse">
+                    <img src="img/warehouse/Warehouse-two.png" alt="Warehouse">
+                    <img src="img/warehouse/Warehouse-th.png" alt="Warehouse">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-staff">
+        <div class="container">
+            <div class="staff section-staff__staff">
+                <h2 class="staff__title">У нас в штате есть мобильные бригады, готовые выехать на сервисное обслуживание, ремонт и проведение диагностики!</h2>
+
+                <div class="staff-wrap d-flex">
+                    <div class="cards staff__cards d-flex">
+                        <img class="cards__img" src="img/staff/delivery.png" alt="Delivery">
+                        <p class="cards__subtitle cards__subtitle_property">Организуем выезд специалистов в&nbsp;течение двух дней</p>
+                    </div>
+
+                    <div class="cards staff__cards d-flex">
+                        <img class="cards__img" src="img/staff/work.png" alt="Work">
+                        <p class="cards__subtitle cards__subtitle_property">Бригады укомплектованы всем необходимым оборудованием для производства работ любой сложности</p>
+                    </div>
+
+                    <div class="cards staff__cards d-flex">
+                        <img class="cards__img" src="img/staff/education.png" alt="Education">
+                        <p class="cards__subtitle">Все специалисты проходят обучение и&nbsp;ежегодную аттестацию</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-advice">
+        <div class="container">
+            <div class="advice section-advice__advice">
+                <h2 class="advice__title">Если Вам необходима бесплатная консультация по вопросу обслуживания</h2>
+
+                <p class="advice__call">Звоните нам по телефону:</p>
+                <a class="advice__phone" href="tel:+7(818)247-47-25">+7 (818) 247-47-25</a>
+
+                <form action="template/mail.php" method="post" class="form advice__form d-flex">
+                    <div class="input-wrap">
+                        <input type="text" name="phone" class="input advice__input phone" placeholder="Введите ваш телефон">
+                        <img class="advice__input_img" src="img/icon/call-answer.png" alt="call">
+                    </div>
+
+                    <button class="btn advice__btn">Перезвонить сейчас</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-welcome">
+        <div class="container">
+            <div class="welcome section-welcome__welcome">
+                <h2 class="welcome__title">Приезжайте в наш офис!</h2>
+                <p class="welcome__address">г. Архангельск, Москва-Сити, оф. 3725</p>
+                <a class="welcome__phone" href="tel:+7(818)247-47-25">+7 (818) 247-47-25</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-map">
+        <div class="map">
+            <div class="ymap-container">
+                <div class="loader loader-default"></div>
+                <div id="map-yandex" style="width: 100%; height: 375px"></div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="contacts footer__contacts d-flex">
+                <a class="logo contacts__logo"><img src="img/logo.png" alt="Logo"></a>
+
+                <div class="phone contacts__phone d-flex">
+                    <p class="phone__title">Есть вопросы? Звоните!</p>
+                    <a class="phone__number" href="tel:+7(818)247-47-25">+7 (818) 247-47-25</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <div class="modal d-flex">
+        <div class="modal-dialog d-flex">
+            <button class="modal-dialog__btn" id="modal-btn">&#10008;</button>
+            <h2 class="modal-dialog__title">Узнайте точную стоимость ремонта по телефону!</h2>
+            <p class="modal-dialog__text">Заполните поля ниже - мы свяжемся с Вами</p>
+
+            <form action="template/mail.php" method="post" class="form modal-dialog__form" id="modal-dialog">
+                <div class="input-wrapper"><input type="text" name="name" class="input modal-dialog__input" placeholder="Ваше имя"></div>
+                <div class="input-wrapper"><input type="tel" name="phone" class="input modal-dialog__input phone" placeholder="Ваш телефон"></div>
+                <button class="btn modal-dialog_btn">Узнать стоимость</button>
+            </form>
+
+            <p class="modal-dialog__info">Или Вы можете перезвонить нам сами по&nbsp;телефону:</p>
+            <a class="modal-dialog-info__phone" href="tel:+7(818)247-47-25">+7(818) 247-47-25</a>
+        </div>
+    </div>
+
+    <div class="modal-status d-flex">
+        <div class="modal-dialog__status d-flex">
+            <button class="modal-status__btn" id="modal-status">&#10008;</button>
+            <img class="modal-dialog__mail" src="img/icon/email.svg" alt="mail">
+            <h2 class="modal-dialog__title">Спасибо за вашу заявку!</h2>
+        </div>
+    </div>
+
+    <div class="modal-document d-flex">
+        <div class="document modal-document__document">
+            <img class="document__img" src="#" alt="Документ">
+        </div>
+    </div>
+
+    <div class="questions-modal body__questions-modal d-flex">
+        <button class="questions-modal__btn">&#10008;</button>
+        <p class="questions-modal__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae consequatur consequuntur, distinctio doloribus eveniet id nobis quod sapiente sed velit..</p>
+    </div>
+
+
+    <button class="btn-up"><img src="img/btn-up.svg" alt="UP"></button>
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

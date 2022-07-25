@@ -1,0 +1,404 @@
+.modal .input
+  border-radius: 10px
+  border: 1px solid #ddd
+  &:focus
+    border: 1px solid #f7b516
+    outline: none
+
+.input-wrapper
+  position: relative
+  margin-bottom: 25px
+
+
+.modal, .modal-status, .modal-document
+  position: fixed
+  top: 0
+  left: 0
+  display: none
+  justify-content: center
+  align-items: center
+  width: 100%
+  height: 100%
+  z-index: 9999
+  background-color: rgba(0,0,0,0.5)
+
+.modal-dialog, .modal-dialog__status
+  flex-direction: column
+  align-items: center
+  position: relative
+  max-width: 615px
+  padding: 80px 100px
+  background-color: #ffffff
+
+.modal-dialog__btn, .modal-status__btn
+  position: absolute
+  top: 10px
+  right: 10px
+  background: transparent
+  border: none
+  outline: none
+  cursor: pointer
+
+.modal-dialog__title
+  max-width: 291px
+  margin-bottom: 40px
+  font-family: 'Proxima Nova Th', sans-serif
+  font-size: 22px
+  font-weight: 800
+  text-align: center
+  line-height: 33px
+  color: #333333
+
+.modal-dialog__text
+  margin-bottom: 53px
+  font-family: 'Proxima Nova Rg', sans-serif
+  font-size: 16px
+  font-weight: normal
+  text-align: center
+  color: #333333
+
+.modal-dialog__form
+  margin-bottom: 33px
+
+.modal-dialog__input
+  min-width: 415px
+  width: 100%
+  margin-bottom: 5px
+  padding: 26px
+  font-family: 'Proxima Nova Rg', sans-serif
+  font-weight: normal
+  font-size: 14px
+  color: #999999
+
+.modal-dialog__input:nth-child(2)
+  margin-bottom: 30px
+
+.modal-dialog_btn
+  width: 100%
+  max-width: 100%
+  padding: 28px
+  font-family: 'Proxima Nova Rg', sans-serif
+  font-size: 16px
+  font-weight: 400
+  line-height: 18px
+  border: none
+  border-radius: 10px
+
+.modal-dialog__info
+  width: 70%
+  margin-bottom: 13px
+  font-family: 'Proxima Nova Rg', sans-serif
+  font-size: 15px
+  font-weight: 400
+  line-height: 20px
+  text-align: center
+  color: #333333
+
+.modal-dialog-info__phone
+  font-family: 'Proxima Nova Th', sans-serif
+  font-size: 24px
+  font-weight: 800
+  line-height: 24px
+  text-align: center
+  text-decoration: none
+  color: #333333
+
+.modal-document__document
+  position: relative
+
+.document
+  width: 40%
+  background: #ffffff
+
+.document__btn
+  position: absolute
+  top: 10px
+  right: 10px
+  padding: 0
+  font-size: 16px
+  background: transparent
+
+.document__btn:hover
+  background: transparent
+
+.document__img
+  display: block
+  width: 80%
+  margin: 40px auto
+
+.service
+  padding: 10px !important
+
+
+.questions
+  &-modal
+    position: relative
+    display: none
+    max-width: 400px
+    padding: 20px
+    background: #ffffff
+    &__text
+      color: #000000
+    &__btn
+      position: absolute
+      top: 5px
+      right: 5px
+      z-index: 999
+      background: transparent
+      border: none
+      &:focus
+        outline: none
+      &:hover
+        @media (min-width: 992px)
+          cursor: pointer
+    &:before
+      content: ''
+      position: absolute
+      top: -20px
+      left: 20px
+      display: block
+      width: 0
+      height: 0
+      border: 10px solid transparent
+      border-left-color: #ffffff
+      transform: rotate(-90deg)
+
+.other
+  height: 0
+  margin-bottom: 0
+  opacity: 0
+
+.body
+  &__questions-modal
+    margin-left: 20px
+    margin-bottom: 20px
+
+
+
+.modal-dialog__mail
+  width: 200px
+  margin-bottom: 20px
+
+.form-result
+  font-family: 'Proxima Nova Rg', sans-serif
+  font-size: 18px
+  font-weight: normal
+  text-align: center
+  color: green
+
+.modal .form
+  padding-bottom: 0
+
+
+
+input.invalid
+  border: 1px solid red !important
+
+.invalid
+  font-family: 'Proxima Nova Rg', sans-serif
+  font-style: italic
+  font-size: 14px
+
+.form div
+  color: red
+
+.input-wrapper div, .input-wrapper__support div
+  position: absolute
+
+.input-wrap div
+  position: absolute
+  left: 5px
+  bottom: 0
+
+
+.invalid__brif:nth-child(3)
+  margin-bottom: 10px
+
+
+@media (max-width: 1200px)
+  .questions-modal
+    max-width: 350px
+
+
+@media (max-width: 992px)
+  .modal-dialog__title
+    margin-bottom: 30px
+
+  .document
+    width: 50%
+    &__img
+      width: 90%
+
+  .questions-modal
+    max-width: 300px
+
+  .body__questions-modal
+    margin-left: 10px
+
+  .follow-price__form #article-error, .follow-price__form #phone-error
+    bottom: 3px
+    font-size: 12px
+
+
+@media (max-width: 768px)
+  .modal-dialog, .modal-price, .modal-dialog__status
+    padding: 50px
+
+  .modal-dialog__title, .modal-price__title
+    margin-bottom: 20px
+    line-height: 26px
+
+  .modal-dialog__text, .modal-price__text
+    margin-bottom: 40px
+
+  .modal-dialog__form, .modal-price__form
+    width: 350px
+
+  .modal-dialog__input, .modal-price__input
+    min-width: auto
+
+  .document
+    width: 70%
+
+  .questions-modal
+    max-width: 345px
+
+  .follow-price__form .invalid, .advice__form .invalid
+    font-size: 13px
+
+  .follow-price__form #article-error, .follow-price__form #phone-error
+    bottom: 15px
+
+@media (max-width: 576px)
+  .modal-dialog, .modal-price, .modal-dialog__status
+    max-width: 400px
+    padding: 40px
+
+  .modal-dialog__title, .modal-price__title
+    font-size: 20px
+
+  .modal-dialog__text, .modal-price__text
+    font-size: 14px
+
+  .modal-dialog__form, .modal-price__form
+    width: 300px
+
+  .modal-dialog__input, .modal-price__input
+    padding: 20px
+
+  .modal-dialog_btn, .modal-price_btn
+    padding: 20px
+    font-size: 16px
+
+  .modal-dialog-info__phone,  .modal-price-info__phone
+    font-size: 18px
+
+  .document
+    width: 90%
+    & .btn
+      padding: 0
+
+
+@media (max-width: 450px)
+  .modal-dialog, .modal-price, .modal-dialog__status
+    max-width: 350px
+
+  .modal-dialog__text, .modal-price__text
+    margin-bottom: 30px
+    font-size: 12px
+
+  .modal-dialog__form, .modal-price__form
+    width: 270px
+
+  .modal-dialog__input, .modal-price__input
+    padding: 15px
+    font-size: 13px
+
+  .modal-dialog_btn, .modal-price_btn
+    padding: 15px
+    font-size: 14px
+
+  .modal-dialog__input:nth-child(2)
+    margin-bottom: 20px
+
+  .modal-dialog__info, .modal-price__info
+    width: 80%
+
+  .modal-dialog__mail
+    width: 150px
+    margin-bottom: 20px
+
+  .form-result
+    margin-top: 0
+    font-size: 14px
+
+  .modal-price .input-wrapper:last-of-type
+      margin-bottom: 10px
+
+  .follow-price__form .invalid, .advice__form .invalid
+    font-size: 12px
+
+
+@media (max-width: 320px)
+  .input-wrapper
+    margin-bottom: 20px
+
+  .modal-dialog, .modal-price, .modal-dialog__status
+    max-width: 300px
+    padding: 30px 20px
+
+  .modal-dialog__title, .modal-price__title
+    font-size: 16px
+    line-height: 20px
+
+  .modal-dialog__form, .modal-price__form
+    width: 250px
+    margin-bottom: 20px
+
+  .modal-dialog__input, .modal-price__input
+    margin-bottom: 0
+
+  .modal-dialog__info, .modal-price__info
+    width: 100%
+    font-size: 14px
+
+  .modal-dialog__mail
+    width: 150px
+    margin-bottom: 20px
+
+  .form-result
+    margin-top: 0
+    font-size: 14px
+
+  .input-wrapper__support div
+    right: 20px
+    bottom: 0
+    font-size: 13px
+
+  .document__img
+    width: 100%
+
+.modal-active
+  display: flex !important
+
+.modal-active-list
+  height: auto
+  margin-bottom: 50px
+  opacity: 1
+  &:last-of-type
+    margin-bottom: 20px
+
+@media (max-width: 992px)
+  .modal-active-list
+    margin-bottom: 30px
+
+@media (max-width: 450px)
+  .modal-active-list
+    margin-bottom: 20px
+
+.link-after
+  &:after
+    content: none !important
+
+.modal-disable
+  display: none

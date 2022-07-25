@@ -1,0 +1,99 @@
+.header
+  padding: 25px 0
+  background-color: #191919
+
+.nav-bar
+  align-items: center
+  &__logo
+    margin-right: auto
+    text-decoration: none
+  &__time
+    flex-direction: column
+    align-items: center
+    font-family: 'Proxima Nova Rg', sans-serif
+    font-size: 12px
+    font-weight: 700
+    color: #ffffff
+    & span:first-child
+      margin-bottom: 10px
+    & span:last-child
+      margin-bottom: 3px
+      font-weight: 400
+  &__phone
+    flex-direction: column
+    align-items: center
+    margin-left: 187px
+  &__btn
+    margin-left: 30px
+
+.phone__number
+  margin-bottom: 10px
+  font-family: 'Proxima Nova Bl', sans-serif
+  font-size: 18px
+  font-weight: 400
+  text-decoration: none
+  color: #ffffff
+  &:last-child
+    margin-bottom: 0
+
+.btn
+  padding: 19px 28px
+  font-family: 'Proxima Nova Rg', sans-serif
+  font-size: 12px
+  font-weight: 700
+  text-transform: uppercase
+  color: #ffffff
+  background-color: #1669b3
+  border: none
+  transition: 0.2s
+  &:focus
+    outline: none
+  &:hover
+    background: #1c86e3
+    cursor: pointer
+
+
+@media (max-width: 1200px)
+  .nav-bar
+    &__logo
+      margin-right: 0
+    &__time
+      margin: 0 auto
+    &__phone
+      margin-left: 0
+
+@media (max-width: 992px)
+  .nav-bar
+    &__logo
+      margin-right: auto
+    &__time
+      display: none
+
+  .btn
+    &:hover
+      background: #1669b3
+      cursor: default
+
+@media (max-width: 768px)
+  .nav-bar
+    &__phone
+      display: none
+
+@media (max-width: 450px)
+  .nav-bar
+    &__logo img
+      max-width: 140px
+    &__btn
+      padding: 15px 15px
+      margin-left: 0
+
+@media (max-width: 320px)
+  .header
+    padding: 20px 0
+
+  .nav-bar
+    &__logo
+      margin-left: 15px
+    &__btn
+      padding: 10px 10px
+      margin-right: 15px

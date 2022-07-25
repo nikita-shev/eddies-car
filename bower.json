@@ -1,0 +1,22 @@
+{
+  "name": "devtools",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Nikita Shevchenko"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "bower_components/",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "jquery": "^3.4.1"
+  }
+}

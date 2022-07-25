@@ -1,0 +1,131 @@
+.guarantee
+  padding:  95px 0 100px
+  &__title
+    max-width: 680px
+    margin: 0 auto 100px
+    font-family: 'Proxima Nova Bl', sans-serif
+    font-size: 36px
+    font-weight: 400
+    text-align: center
+    color: #000000
+
+  &-wrap
+    justify-content: space-around
+    width: 100%
+
+  &-delivery, &-parts, &-quality
+    flex-direction: column
+    align-items: center
+    &__img
+      margin-bottom: 35px
+    &__title
+      max-width: 290px
+      margin-bottom: 35px
+      font-family: 'Proxima Nova Rg', sans-serif
+      font-size: 18px
+      font-weight: 400
+      text-align: center
+      color: #000000
+    &__details
+      position: relative
+      font-family: 'Proxima Nova Rg', sans-serif
+      font-size: 18px
+      font-weight: 700
+      text-decoration: none
+      color: #000000
+
+      @media (min-width: 993px)
+        &:before
+          content: ''
+          position: absolute
+          left: 0
+          bottom: -1px
+          width: 0
+          height: 1px
+          background-color: #000000
+          transition: width 0.3s linear
+        &:hover:before
+          width: 100%
+
+  &-parts, &-quality
+    &__title
+      max-width: 335px
+
+@media (max-width: 1200px)
+  .guarantee
+    &-delivery__title
+      max-width: 270px
+    &-parts__title
+      max-width: 270px
+    &-quality__title
+      max-width: 275px
+
+@media (max-width: 992px)
+  .guarantee
+    padding: 80px 0 90px
+    &__title
+      margin-bottom: 70px
+
+    &-delivery, &-parts, &-quality
+      max-width: 225px
+      &__img
+        max-width: 200px
+
+@media (max-width: 768px)
+  .guarantee
+    padding: 70px 0 80px
+    &__title
+      max-width: none
+      margin-bottom: 40px
+      font-size: 32px
+
+    &-wrap
+      flex-wrap: wrap
+
+
+    &-delivery, &-parts, &-quality
+      max-width: none
+      width: 100%
+      margin-bottom: 65px
+      &__img
+        max-width: none
+        margin-bottom: 20px
+      &__title
+        margin-bottom: 20px
+
+    &-quality
+      margin-bottom: 0
+
+
+@media (max-width: 576px)
+  .guarantee
+    padding: 50px 0 70px
+    &__title
+      font-size: 26px
+
+    &-delivery, &-parts, &-quality
+      &__title
+        font-size: 16px
+      &__details
+        font-size: 16px
+
+@media (max-width: 450px)
+  .guarantee
+    padding: 50px 0 60px
+    &__title
+      font-size: 19px
+
+    &-delivery, &-parts, &-quality
+      &__title
+        font-size: 15px
+      &__details
+        font-size: 14px
+
+@media (max-width: 320px)
+  .guarantee
+    &__title
+      font-size: 18px
+
+    &-delivery, &-parts, &-quality
+      &__title
+        font-size: 14px
